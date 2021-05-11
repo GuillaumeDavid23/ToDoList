@@ -1,0 +1,77 @@
+body{
+    background-image: url("../img/fond.jpg");
+    font-family: 'Pangolin', cursive;
+}
+@keyframes create {
+    from{   
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+img:hover{
+    cursor: pointer; 
+}
+
+img{
+    width: 25px;
+    position: absolute;
+    right: 10px;
+}
+
+#element{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border : 2px dotted black
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow:
+        #0084ff 2.5px 2.5px 0,
+        #006eff 5px 5px 0,
+        #aa038e 7.5px 7.5px 0,
+        #333 10.5px 10.5px 10px;
+    color:#57ffb1;
+    
+
+}
+.ToDo {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+  
+.origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+}
+  
+.draggable {
+    background-color: rgba(245, 211, 147, 0.5);
+    border-bottom: 1px solid tomato;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    animation: create 1s;
+    
+
+}
+  
+.dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+}
